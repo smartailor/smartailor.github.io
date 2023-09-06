@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background: #272a36;
+  margin-top: 50px;
+}
+
+/***************/
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantity button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.quantity input {
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 100px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
+}
+
+.total-price .fa-rupee {
+  display: inline-block;
+  font-size: 90%;
+  margin-right: 5px;
+}
+
+.box {
+  width: 65vw;
+  background-color: white;
+  padding: 25px;
+  margin-top: 15%;
+  border-radius: 7px;
+  box-shadow: 7px 7px 8px 8px #6b6a68;
+}
+
+.p_note {
+  margin-top: 10px;
+}
+
+.btn_back {
+  background-color: #7eed5f;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn_back:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .box {
+    margin-top: 26%;
+    width: 75vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    height: 270px;
+  }
+}

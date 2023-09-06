@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fefefe;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  /* padding: 10px 25px; */
+  padding: 10px 8px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+.beranda {
+  width: 100%;
+}
+
+.beranda img {
+  width: 100%;
+  height: 575px;
+}
+
+.container_edu .img {
+  grid-area: image;
+}
+
+.container_edu .grafik {
+  grid-area: grafik;
+}
+
+.container_edu .info {
+  grid-area: info;
+}
+
+.container_edu {
+  display: grid;
+  grid-template-areas:
+    'image image image image grafik'
+    'image image image image info';
+  gap: 10px;
+  background-color: #aeb3bd;
+  padding: 10px;
+  margin: 40px 10px;
+}
+
+.container_edu > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+.container_edu .chart_box {
+  width: 81%;
+  position: relative;
+  margin-left: 10%;
+  height: 91%;
+}
+
+.container_galery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 35px;
+  justify-content: center;
+}
+
+.card {
+  width: 20vw;
+  border: 1.5px solid black;
+  padding: 11px;
+  border-radius: 7px;
+  transition: transform 0.5s;
+}
+
+.card img {
+  width: 90%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
+
+.btn_pendaftaran {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f27a46;
+  border: none;
+}
+
+.btn_pendaftaran:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container_testimoni {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin: 4.5%;
+  gap: 30px;
+}
+
+.item {
+  padding: 15px;
+  box-shadow: 7px 7px 8px 8px #6b6a68;
+  transition: transform 0.5s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.checked {
+  color: orange;
+}
+
+.container_kontak {
+  margin-top: 2%;
+}
+
+.input_nama {
+  width: 40vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+}
+
+.input_email {
+  width: 40vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+}
+
+.comment {
+  resize: none;
+  width: 40vw;
+  height: 200px;
+  transform: translateX(23px);
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.btn_submit {
+  padding: 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #f27a46;
+  border: none;
+}
+
+.btn_submit:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  width: 60px;
+}
+
+.footer {
+  background-color: #9fa2a6;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+/* p {
+  font-size: 20px;
+} */
+
+.link_instagram {
+  color: black;
+}
+
+.link_instagram:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  margin-right: 5px;
+  transform: translateY(4px);
+}
+
+.p_keterangan_pembuat {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer p a {
+  color: white;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .container_edu {
+    display: grid;
+    grid-template-areas:
+      'image'
+      'grafik'
+      'info';
+    gap: 10px;
+    background-color: #aeb3bd;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .container_edu > div {
+    font-size: 19px;
+  }
+
+  .container_edu .chart_box {
+    position: relative;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 450px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container_galery {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .card {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container_testimoni {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container_testimoni {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .input_nama {
+    width: 65vw;
+  }
+
+  .input_email {
+    width: 65vw;
+  }
+
+  .comment {
+    width: 64vw;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .container_galery {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    width: 80vw;
+  }
+}

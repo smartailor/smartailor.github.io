@@ -1,0 +1,65 @@
+body {
+  background-color: #b9bec7;
+}
+
+.formulir {
+  padding: 15px;
+  background-color: white;
+  width: 50vw;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 15%;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn_submit {
+  padding: 10px;
+  background-color: orange;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+
+.btn_submit:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input,
+label {
+  margin-left: 10px;
+}
+
+#select_lokasi {
+  padding: 5px;
+  background-color: #b9bec7;
+  border-radius: 7px;
+  width: 150px;
+}
+
+#form_nama {
+  width: 60%;
+}
+
+@media (max-width: 550px) {
+  .formulir {
+    width: 80vw;
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 415px) {
+  .formulir {
+    margin-top: 35%;
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  background-color: #b9bec7;
+}
+
+input {
+  width: 330px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.formulir {
+  width: 50vw;
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 7%;
+}
+
+.btn_kirim {
+  padding: 10px;
+  background-color: #ff8381;
+  border-radius: 7px;
+  border: none;
+}
+
+.btn_kirim:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#p_konfirmasi {
+  font-weight: bold;
+}
+
+/* STYLE UNTUK RESPONSIVE */
+@media (max-width: 630px) {
+  .formulir {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .formulir {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 390px) {
+  input {
+    width: 96%;
+  }
+}

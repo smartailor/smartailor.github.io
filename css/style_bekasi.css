@@ -1,0 +1,210 @@
+body {
+  /* background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #5dc7f5); */
+  background-color: #b9bec7;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 7px;
+  width: 250px;
+  background-color: white;
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: translateY(5px);
+}
+
+img {
+  margin-top: 7px;
+  width: 85%;
+}
+
+.container p {
+  margin-left: 3%;
+  line-height: 9px;
+}
+
+.container button {
+  border: none;
+  font-weight: bold;
+  background-color: #fcba03;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.container button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checked {
+  color: orange;
+}
+
+.btn_pilih {
+  margin-top: 2%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+.modal-body img {
+  width: 45%;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.btn_liatkarya {
+  margin-top: 2%;
+}
+
+.btn_prediksiharga {
+  margin-top: 2%;
+}
+
+/* Style prediksi harga */
+.quantity {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+}
+
+.quantity button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.quantity input {
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 100px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.total-price .fa-rupee {
+  display: inline-block;
+  font-size: 90%;
+  margin-right: 5px;
+}
+
+/* STYLE UNTUK RESPONSIVE */
+@media (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 45vw;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    width: 80vw;
+    /* height: 500px; */
+  }
+
+  .modal-body {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    overflow: scroll;
+    height: 340px;
+  }
+
+  .modal-body img {
+    width: 98%;
+  }
+}
