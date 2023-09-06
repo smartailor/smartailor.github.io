@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background: #272a36;
+  margin-top: 50px;
+}
+
+/***************/
+
+.quantity {
+  display: flex;
+  justify-content: center;
+}
+
+.quantity button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.quantity input {
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 100px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.total-price .fa-rupee {
+  display: inline-block;
+  font-size: 90%;
+  margin-right: 5px;
+}

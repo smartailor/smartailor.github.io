@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="quantity">
+      <button class="btn minus-btn disabled" type="button">-</button>
+      <input type="text" id="quantity" value="1" />
+      <button class="btn plus-btn" type="button">+</button>
+    </div>
+
+    <!--will calculate price---->
+    <p class="total-price">
+      <span><i class="fa fa-rupee"></i></span>
+      <span id="price">100</span>
+    </p>
+
+    <script>
+      //setting default attribute to disabled of minus button
+      document.querySelector('.minus-btn').setAttribute('disabled', 'disabled');
+
+      //taking value to increment decrement input value
+      var valueCount;
+
+      //taking price value in variable
+      var price = document.getElementById('price').innerText;
+
+      //price calculation function
+      function priceTotal() {
+        var total = valueCount * price;
+        document.getElementById('price').innerText = total;
+      }
+
+      //plus button
+      document.querySelector('.plus-btn').addEventListener('click', function () {
+        //getting value of input
+        valueCount = document.getElementById('quantity').value;
+
+        //input value increment by 1
+        valueCount++;
+
+        //setting increment input value
+        document.getElementById('quantity').value = valueCount;
+
+        if (valueCount > 1) {
+          document.querySelector('.minus-btn').removeAttribute('disabled');
+          document.querySelector('.minus-btn').classList.remove('disabled');
+        }
+
+        //calling price function
+        priceTotal();
+      });
+
+      //plus button
+      document.querySelector('.minus-btn').addEventListener('click', function () {
+        //getting value of input
+        valueCount = document.getElementById('quantity').value;
+
+        //input value increment by 1
+        valueCount--;
+
+        //setting increment input value
+        document.getElementById('quantity').value = valueCount;
+
+        if (valueCount == 1) {
+          document.querySelector('.minus-btn').setAttribute('disabled', 'disabled');
+        }
+
+        //calling price function
+        priceTotal();
+      });
+    </script>
+  </body>
+</html>
