@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjahit di Bekasi</title>
+    <link rel="stylesheet" href="css/style_bekasi.css" />
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <center><h1 style="font-family: 'Poppins', sans-serif">Ini dia penjahit yang tersedia yang dekat dengan lokasi anda sekarang !</h1></center>
+    <center>
+      <div class="container">
+        <div class="card 1">
+          <img src="img2/orang1.jpg" />
+          <p><b>Nama:</b> Marinus Santa</p>
+          <p><b>Umur:</b> 18 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 2</p>
+          <p><b>Nomor telepon:</b> 986475</p>
+          <p><b>Spesialisasi pakaian:</b> <p>Baju sekolah</p></span></p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga()">Prediksi Harga</button>
+        </div>
+        <div class="card 2">
+          <img src="img2/orang2.jpg" />
+          <p><b>Nama:</b> Jean Order</p>
+          <p><b>Umur:</b> 17 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 4</p>
+          <p><b>Nomor telepon:</b> 219807</p>
+          <p><b>Spesialisasi pakaian:</b> Kebaya</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal2">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga2()">Prediksi Harga</button>
+        </div>
+        <div class="card 3">
+          <img src="img2/orang3.jpg" />
+          <p><b>Nama:</b> Carlo Smith</p>
+          <p><b>Umur:</b> 22 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 5</p>
+          <p><b>Nomor telepon:</b> 635423</p>
+          <p><b>Spesialisasi pakaian:</b> Baju adat</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal3">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga3()">Prediksi Harga</button>
+        </div>
+        <div class="card 4">
+          <img src="img2/orang 4.jpg" />
+          <p><b>Nama:</b> Charles Chaos</p>
+          <p><b>Umur:</b> 24 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 7</p>
+          <p><b>Nomor telepon:</b> 967254</p>
+          <p><b>Spesialisasi pakaian:</b> Batik</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal4">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga4()">Prediksi Harga</button>
+        </div>
+        <div class="card 5">
+          <img src="img2/orang5.jpg" />
+          <p><b>Nama:</b> Sail Nath</p>
+          <p><b>Umur:</b> 31 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 10</p>
+          <p><b>Nomor telepon:</b> 743574</p>
+          <p><b>Spesialisasi pakaian:</b> Daster</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal5">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga5()">Prediksi Harga</button>
+        </div>
+        <div class="card 6">
+          <img src="img2/orang6.jpg" />
+          <p><b>Nama:</b> Jack Wonder</p>
+          <p><b>Umur:</b> 40 Tahun</p>
+          <p><b>Karya terselesaikan:</b> 15</p>
+          <p><b>Nomor telepon:</b> 153978</p>
+          <p><b>Spesialisasi pakaian:</b> Baju anak</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span><br />
+          <button class="btn_pilih" onclick="pilih()">Pilih !</button><br />
+          <button class="btn_liatkarya" data-modal-target="#modal6">Lihat karya !</button><br>
+          <button class="btn_prediksiharga" onclick="prediksiharga6()">Prediksi Harga</button>
+        </div>
+      </div>
+    </center>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Hasil karya Marinus Santa</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img2/orang1_karya1_bekasi.jpg"/>
+          <img src="img2/orang1_karya2_bekasi.jpg"/>
+          <img src="img2/orang1_karya3_bekasi.jpg"/>
+          <img src="img2/orang1_karya4_bekasi.jpg"/>
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 1 -->
+
+    <!-- Modal 2-->
+    <div class="modal" id="modal2">
+      <div class="modal-header">
+        <div class="title">Hasil karya Jean Order</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img2/orang2_karya1_bekasi.jpg"/>
+          <img src="img2/orang2_karya2_bekasi.jpg"/>
+          <img src="img2/orang2_karya3_bekasi.jpg"/>
+          <img src="img2/orang2_karya4_bekasi.jpg"/>
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 2-->
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3">
+      <div class="modal-header">
+        <div class="title">Hasil karya Carlo Smith</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img2/orang3_karya1_bekasi.jpg"/>
+          <img src="img2/orang3_karya2_bekasi.jpg"/>
+          <img src="img2/orang3_karya3_bekasi.jpg"/>
+          <img src="img2/orang3_karya4_bekasi.jpg" />
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 3-->
+
+    <!-- Modal 4 -->
+    <div class="modal" id="modal4">
+      <div class="modal-header">
+        <div class="title">Hasil karya Charles Chaos</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img/orang4_karya1_bekasi.jpg"/>
+          <img src="img/orang4_karya2_bekasi.jpg"/>
+          <img src="img/orang4_karya3_bekasi.jpg"/>
+          <img src="img/orang4_karya4_bekasi.jpg"/>
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 4 -->
+
+    <!-- Modal 5 -->
+    <div class="modal" id="modal5">
+      <div class="modal-header">
+        <div class="title">Hasil karya Sail Nath</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img/orang5_karya1_bekasi.jpg"/>
+          <img src="img/orang5_karya2_bekasi.jpg" />
+          <img src="img/orang5_karya3_bekasi.jpg"/>
+          <img src="img/orang5_karya4_bekasi.jpg"/>
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 5-->
+
+    <!-- Modal 6-->
+    <div class="modal" id="modal6">
+      <div class="modal-header">
+        <div class="title">Hasil karya Jack Wonder</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <center>
+        <div class="modal-body">
+          <img src="img/orang6_karya1_bekasi.jpg"/>
+          <img src="img/orang6_karya2_bekasi.jpg"/>
+          <img src="img/orang6_karya3_bekasi.jpg"/>
+          <img src="img/orang6_karya4_bekasi.jpg"/>
+        </div>
+      </center>
+    </div>
+    <div id="overlay"></div>
+    <!-- Akhir Modal 6-->
+
+    <script src="js/script_bekasi.js"></script>
+    <script>
+      // script fungsi pilih()
+      function pilih() {
+        window.location.assign('whatsapp://send?text=Hello&phone=+6281218891903');
+      }
+
+      function prediksiharga() {
+        window.location.assign('prediksiharga.html');
+      }
+
+      function prediksiharga2() {
+        window.location.assign('prediksiharga_2.html');
+      }
+
+      function prediksiharga3() {
+        window.location.assign('prediksiharga_3.html');
+      }
+
+      function prediksiharga4() {
+        window.location.assign('prediksiharga_4.html');
+      }
+
+      function prediksiharga5() {
+        window.location.assign('prediksiharga_5.html');
+      }
+
+      function prediksiharga6() {
+        window.location.assign('prediksiharga_6.html');
+      }
+    </script>
+  </body>
+</html>

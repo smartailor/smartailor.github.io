@@ -1,0 +1,43 @@
+Halo semuanya, perkenalkan nama saya Marco Samuel Tuapattinaya dari tim Marco
+Samuel Tuapattinaya. Saya dari SMAS Mahanaim Bekasi :)
+
+Pada kesempatan kali ini, saya membuat website yang bernama "SmarTailor". Tujuan 
+utama saya membuat website tersebut adalah karena saya ingin berkontribusi untuk 
+pertumbuhan Industri Tekstil dan Pakaian Jadi di Indonesia. Oleh karena itu, di website
+nya, saya menampilkan data pertumbuhan Industri Tekstil dan Pakaian jadi di Indonesia.
+
+Lalu, saya juga menampilkan hasil karya para penjahit, baik penjahit besar maupun
+penjahit kecil. Saya menampilkan hal tersebut karena terinspirasi dari penjahit keliling
+yang ada di komplek rumah saya. Saya mengamati bahwa customer para penjahit tidak
+merata yang mengakibatkan tingkat penghasilan yang berbeda antara penjahit yang satu
+dengan penjahit yang lainnya. Oleh karena itu, saya mempublikasikan hasil karya beberapa
+penjahit agar karya mereka dilirik oleh banyak orang.
+
+Selanjutnya, saya menyediakan 2 pilihan kepada pengguna. Mereka bisa menjadi penjahit
+atau customer yang membutuhkan seorang penjahit. Saat memilih pilihan sebagai customer, 
+saya memberikan informasi selengkap mungkin mengenai seorang penjahit. Alasan saya
+melakukan itu adalah karena saya diceritakan oleh ibu saya bahwa temannya sempat 
+menjahit baju. Teman ibu saya sudah memberi tahu kepada si penjahit ukuran apa yang 
+pas dan motif yang ia inginkan. Namun, hasilnya sangat mengecewakan, dimulai dari 
+ukuran yang tidak pas, bahan yang asal-asalan, dan motif yang berantakan. Dari kasus 
+tersebut, saya mengambil kesimpulan bahwa diperlukan adanya transparansi dari 
+kompetensi para penjahit. Karena alasan tersebut, saya menyediakan informasi mengenai 
+spesialisasi jenis pakaian dan rating seorang penjahit, agar saat memilih, customer dapat 
+memilih layanan yang sesuai dengan kemauan mereka. Lalu ada juga informasi mengenai 
+karya yang sudah terselesaikan, itu menandakan pengalaman yang sudah dilalui oleh para 
+penjahit sehingga customer mempunyai pertimbangan yang lebih matang sebelum memilih
+layanan. Selanjutnya, jika memilih pilihan sebagai penjahit, maka pengguna akan dimintai 
+beberapa data, terutama data-data penting seperti spesialisasi jenis pakaian dan karya yang 
+terselesaikan. Tujuannya seperti yang sudah di jelaskan di atas.
+
+Terakhir, ada kontak. Jika pengguna ingin memberikan masukkan atau kritik yang 
+berkaitan dengan website saya, pengguna bisa mengisi formulir kontak tersebut. 
+Nantinya akan saya terima melalui Google Spreadsheet yang sudah saya buat secara statis.
+
+Link website:
+smartailor.github.io
+
+Jika suka dengan desain website saya, boleh komentar melalui formulir kontak yang sudah
+saya sediakan. Terimakasih, Salam Coding :D
+
+- Marco Samuel Tuapattinaya
