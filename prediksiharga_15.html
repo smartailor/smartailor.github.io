@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Cath Said</title>
+    <meta charset="UTF-8" />
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="css/style_prediksiharga_15.css" />
+    <!-- Titel Icon -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <center>
+      <div class="box">
+        <h1>Prediksi Harga</h1>
+        <hr />
+        <div class="quantity">
+          <button class="btn minus-btn disabled" type="button">-</button>
+          <input type="text" id="quantity" value="1" />
+          <button class="btn plus-btn" type="button">+</button>
+        </div>
+
+        <p class="total-price">Prediksi Harga: Rp<span id="price">14000</span></p>
+        <p class="p_note"><span style="font-weight: bold">Catatan: </span>Kuantitas di atas berdasarkan jumlah pakaian.</p>
+        <button onclick="back()" style="margin-top: 10px" class="btn_back">Halaman Sebelumnya</button>
+      </div>
+    </center>
+
+    <script src="js/script_prediksiharga_15.js"></script>
+    <script>
+      function back() {
+        window.location.assign('bandung.html');
+      }
+    </script>
+  </body>
+</html>

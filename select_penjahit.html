@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjahit</title>
+    <link rel="stylesheet" href="css/style_selectpenjahit.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center> -->
+    <br />
+    <center>
+      <div class="formulir">
+        <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center>
+        <label for="nama">Nama:</label>
+        <input type="text" placeholder="Masukkan nama..." name="nama" class="form_nama form" autocomplete="off" /><br /><br />
+        <label for="umur">Umur:</label>
+        <input type="number" placeholder="Masukkan umur..." class="form_umur form" /><br /><br />
+        <label for="projek_selesai">Karya yang sudah di selesaikan:</label>
+        <input type="number" placeholder="Masukkan jumlah projek yang sudah di selesaikan..." class="form_projekselesai form" /><br /><br />
+        <label for="lokasi">Lokasi tempat tinggal:</label>
+        <input type="text" placeholder="Masukkan lokasi tempat tinggal..." class="form_lokasi form" /><br /><br />
+        <label for="nomor_telepon">Nomor telepon:</label>
+        <input type="number" placeholder="Masukkan nomor telepon..." class="form_nomortelepon form" /><br /><br />
+        <label for="spesialisasi_pakaian">Spesialisasi pakaian:</label>
+        <select class="form_spesialisasi">
+          <option selected disabled>Spesialisasi anda di pakaian jenis apa ?</option>
+          <option value="Batik">Batik</option>
+          <option value="Kebaya">Kebaya</option>
+          <option value="Baju Sekolah">Baju Sekolah</option>
+          <option value="Baju Adat">Baju Adat</option>
+          <option value="Daster">Daster</option>
+          <option value="Baju Anak">Baju Anak</option>
+          <option value="Hoodie">Hoodie</option>
+          <option value="Rompi">Rompi</option></select
+        ><br /><br />
+        <button onclick="kirim()" class="btn_kirim">Daftar sekarang !</button>
+        <p id="p_nama"></p>
+        <p id="p_umur"></p>
+        <p id="p_projek"></p>
+        <p id="p_lokasi"></p>
+        <p id="p_nomor_telepon"></p>
+        <p id="p_spesialisasi"></p>
+        <p id="p_konfirmasi"></p>
+      </div>
+    </center>
+
+    <script src="js/script_selectpenjahit.js"></script>
+  </body>
+</html>
